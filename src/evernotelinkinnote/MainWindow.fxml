@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evernotelinkinnote.EvernoteLinkInNote">
+   <children>
+      <TextField fx:id="txtLink" layoutX="118.0" layoutY="74.0" prefHeight="25.0" prefWidth="463.0" />
+      <TextField fx:id="txtDestination" layoutX="118.0" layoutY="119.0" prefHeight="25.0" prefWidth="463.0" />
+    <!--  <TitledPane fx:id="paneDestination" animated="false" layoutX="18.0" layoutY="379.0" prefHeight="93.0" prefWidth="565.0" text="Destination">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="67.0" prefWidth="321.0">
+               <children>
+                  <WebView fx:id="webDestination" prefHeight="67.0" prefWidth="563.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </content>
+      </TitledPane> -->
+      <TitledPane fx:id="paneLink" animated="false" layoutX="18.0" layoutY="272.0" prefHeight="174.0" prefWidth="565.0" text="Link">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="67.0" prefWidth="321.0">
+               <children>
+                  <WebView fx:id="webLink" layoutX="2.0" prefHeight="67.0" prefWidth="563.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </content>
+      </TitledPane>
+      <TextField fx:id="txtJump" layoutX="118.0" layoutY="24.0" prefHeight="25.0" prefWidth="463.0" />
+      <Label layoutX="14.0" layoutY="28.0" text="Jump Name" />
+      <Label layoutX="14.0" layoutY="78.0" text="Link Text" />
+      <Label layoutX="14.0" layoutY="123.0" text="Destination Text" />
+      <Button fx:id="btnGenerate" layoutX="268.0" layoutY="205.0" mnemonicParsing="false" onAction="#generateLinks" text="Generate" />
+      <Label fx:id="lblVersion" layoutX="14.0" layoutY="478.0" prefHeight="17.0" prefWidth="565.0" text="Version " />
+   </children>
+</AnchorPane>
