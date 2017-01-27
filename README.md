@@ -1,5 +1,6 @@
 # EvernoteLinkInNote
 
+Currently Inactive, Contact me if you're interested in maintaining this.
 
 This is just a simple app to easily genereate a jump for evernote notes, easily copy and paste into your note and style them how you please, and they should work.
 
